@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/IrF.gif');
+    /* Указываем путь к вашей гифке */
+    background-size: cover;
+    background-size: 11%;
+    /* Растягиваем гифку на всю страницу */
+    background-position: center;
+    /* Центрируем изображение */
+    background-repeat: no-repeat;
+    /* Останавливаем повторение изображения */
+    min-height: 100vh;
+    /* Устанавливаем минимальную высоту на 100% высоты экрана */
+    margin: 0;
+    /* Убираем отступы */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер для основной части приложения */
+.container {
+    margin-top: 200px;
+    width: 100%;
+}
+
+/* Кастомный стиль для блока с задачами */
+.custom-box {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    overflow: hidden;
+}
+
+.task-description {
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 40px !important;
+    text-align: center;
+    padding-bottom: 30px;
+}
