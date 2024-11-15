@@ -6,29 +6,22 @@
 
 body {
     background-image: url('img/IrF.gif');
-    /* Указываем путь к вашей гифке */
     background-size: cover;
     background-size: 11%;
-    /* Растягиваем гифку на всю страницу */
     background-position: center;
-    /* Центрируем изображение */
     background-repeat: no-repeat;
-    /* Останавливаем повторение изображения */
     min-height: 100vh;
-    /* Устанавливаем минимальную высоту на 100% высоты экрана */
     margin: 0;
-    /* Убираем отступы */
+
     display: flex;
     flex-direction: column;
 }
 
-/* Контейнер для основной части приложения */
 .container {
     margin-top: 200px;
     width: 100%;
 }
 
-/* Кастомный стиль для блока с задачами */
 .custom-box {
     width: 50%;
     margin: 0 auto;
@@ -49,9 +42,80 @@ body {
     width: 100%;
 }
 
-/* Заголовок */
 h1 {
     font-size: 40px !important;
     text-align: center;
     padding-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .custom-box {
+        width: 80%;
+
+    }
+
+    .task {
+        width: 90%;
+
+    }
+
+    .task-description {
+        font-size: 14px;
+
+    }
+
+    h1 {
+        font-size: 30px !important;
+
+    }
+
+    .action-button {
+        font-size: 12px ;
+        padding: 6px 12px ;
+
+    }
+    .button-container {
+        display: flex;
+        gap: 10px ;
+        justify-content: space-between;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+    }
+    .custom-box {
+        width: 90%;
+    }
+    .task {
+        width: 100%;
+
+    }
+
+    .task-description {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    .action-button {
+        font-size: 10px !important;
+        padding: 4px 8px;
+
+    }
+    .button-container {
+        display: flex;
+        gap: 6px;
+        justify-content: space-between;
+        }
 }

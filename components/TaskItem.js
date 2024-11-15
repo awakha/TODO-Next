@@ -14,11 +14,11 @@ const TaskItem = ({ task, toggleTaskCompletion, deleteTask, editTask }) => {
           </Typography>
         </Tooltip>
       </Box>
-      <Box>
-        <Button onClick={() => editTask(task)} color="primary" variant="outlined" size="small" style={{ marginRight: '10px' }}>
+      <Box className="button-container">
+        <Button className="action-button" onClick={() => editTask(task)} color="primary" variant="outlined" size="small" style={{ marginRight: '10px' }}>
           Редактировать
         </Button>
-        <Button onClick={() => deleteTask(task.id)} color="secondary" variant="outlined" size="small">
+        <Button className="action-button"  onClick={() => deleteTask(task.id)} color="secondary" variant="outlined" size="small">
           Удалить
         </Button>
       </Box>
